@@ -1,5 +1,5 @@
 # AVR-Rehearsal
-For Beginner Traing AVR.  
+For Beginner Training AVR.  
 The AVR Atmel chip is using <span style="color:blue">ATmega328P</span>.
 
 ## Device
