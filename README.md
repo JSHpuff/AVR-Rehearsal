@@ -1,12 +1,12 @@
 # AVR-Rehearsal
 For Beginner Training AVR.  
-The AVR Atmel chip is using <span style="color:blue">ATmega328P</span>.
+The AVR Atmel chip is using <span style="color:green">ATmega328P</span>.
 
 ## Device
-The project is using <span style="color:blue">Arduino Nano / Arduino UNO R3</span> to accomplish.
+The project is using <span style="color:green">Arduino Nano / Arduino UNO R3</span> to accomplish.
 
 ## IDE (Intergrated Development Environment)
-Using <span style="color:blue">Microchip Studio</span> on windows system.
+Using <span style="color:green">Microchip Studio</span> on windows system.
 
 ## IDE Setup
 1. Install [Atmel Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio#Downloads)
@@ -18,7 +18,7 @@ Using <span style="color:blue">Microchip Studio</span> on windows system.
     c. Choose "External Tools..."  
     d. Name the External Tool in "Title"  
     e. Input in the "Command": 
-    <span style="color:blue">avrdude.exe path   </span>
+    <span style="color:green">avrdude.exe path   </span>
     ```diff   
     C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude.exe
     ```    
@@ -28,7 +28,7 @@ Using <span style="color:blue">Microchip Studio</span> on windows system.
      -v -patmega328p -carduino-PCOMX -b57600 
      -D -Uflash:w:"$(ProjectDir)Debug\$(TargetName).hex":i
     ```    
-    at <span style="color:blue">-PCOMX </span>, input your device's com port number.    
+    at <span style="color:green">-PCOMX </span>, input your device's com port number.    
 5. After setup, you can flash.
 
 
