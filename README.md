@@ -3,7 +3,7 @@ For Beginner Training AVR.
 The AVR Atmel chip is using ATmega328P.
 
 ## Device
-The project is using Arduino Nano / Arduino UNO R3 to accomplish.
+The project is using <h4>Arduino Nano / Arduino UNO R3</h4> to accomplish.
 
 ## IDE (Intergrated Development Environment)
 Using Microchip Studio on windows system.
