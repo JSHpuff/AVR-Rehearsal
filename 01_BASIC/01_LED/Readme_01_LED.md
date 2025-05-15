@@ -16,8 +16,38 @@ It demonstrates three key concepts:
 You can copy the code or using the file in 01_LED.
 
 ### Code Explanation
-- Define **CPU Frquency**: Using for the <util/delay.h> and define it for CPU running frequency. It is benefit to arrange the time for any application.
+1.  #define Mhz 1000000UL  
+    #define F_CPU 16*Mhz
+
+- Define **CPU Frquency**:  
+-- Using for <util/delay.h> & define for CPU running frequency.   
+-- It's benefit to arrange the time for any application.
+
+- UL: unsigned long integer
+- Need to defiend before including any AVR library headers.
+
+---
+2.  #include <avr/io.h>  
+    #include <util/delay.h>
+
+- **avr/io.h**:   
+-- I/O Port Definitions  
+-- Device-Specific Registers (timer, ADC, USART, SPI, etc.)  
+-- Bit Manipulateion Macros
+-- Device Selection
+
+- **util/delay.h**:  
+-- Precise Timing Delays
+
+---
+3. DDRD = 0xff;
+
+- Set all the PORT D pin's direction as **OUTPUT**.
+
+---
+4. PORTD |= (1<<PORTD2);
 
 - 
+
 
 ### Circuit
