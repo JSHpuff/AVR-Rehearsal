@@ -16,6 +16,6 @@ It demonstrates three key concepts:
 You can copy the code or using the file in 01_LED.
 
 ### Code Explanation
-- Define 'CPU Frquency': Using for the <util/delay.h>
+- Define **CPU Frquency**: Using for the <util/delay.h>
 
 ### Circuit
