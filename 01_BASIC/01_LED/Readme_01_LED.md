@@ -16,6 +16,8 @@ It demonstrates three key concepts:
 You can copy the code or using the file in 01_LED.
 
 ### Code Explanation
-- Define **CPU Frquency**: Using for the <util/delay.h>
+- Define **CPU Frquency**: Using for the <util/delay.h> and define it for CPU running frequency. It is benefit to arrange the time for any application.
+
+- 
 
 ### Circuit
