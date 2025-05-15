@@ -16,6 +16,9 @@ It demonstrates three key concepts:
 You can copy the code or using the file in 01_LED.
 
 ### Code Explanation
+0. **Purpose**: blink led
+
+---
 1.  #define Mhz 1000000UL  
     #define F_CPU 16*Mhz
 
@@ -47,7 +50,46 @@ You can copy the code or using the file in 01_LED.
 ---
 4. PORTD |= (1<<PORTD2);
 
-- 
+- PORTD2 = 2
+
+- <<: Left shift
+
+- Set Port D pin 2: D2 voltage **HIGH**(1)
+
+- Calculate: if PORTD is 0x00000000  
+--> (1<<PORTD2): 0x00000100, 1 left shift 2  
+--> PORTD |= (1<<PORTD2) -> PORTD = PORTD | (1<<PORTD2)  
+--> 0x00000000 or 0x00000100
+--> 0x00000100 
+
+---
+5. PORTD &= ~(1<<PORTD2);
+
+- Set D2 voltage **LOW**(0)
+
+- Calculate: if PORTD is 0x00000000  
+--> (1<<PORTD2): 0x00000100, 1 left shift 2   
+--> ~(1<<PORTD2) -> 0x11111011   
+--> PORTD &= (1<<PORTD2) -> PORTD = PORTD & ~(1<<PORTD2)  
+--> 0x00000000 and 0x11111011
+--> 0x11111011
+
+---
+6. PORTD ^= (1<<PORTD3);
+
+- Xor / Toggle:  
+-- while the value is 0, it turned into 1.  
+-- whiel the value is 1, it turned into 0.
+
+- PORTD3 = 3
+
+---
+
+7. _delay_ms(500);
+
+- Delay in millisecond
+
+- Delay 0.5 seconds
 
 
 ### Circuit
