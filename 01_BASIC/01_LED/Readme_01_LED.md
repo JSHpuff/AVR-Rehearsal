@@ -94,3 +94,4 @@ You can copy the code or using the file in 01_LED.
 
 ### Circuit
 ![Project Circuit](Schematic_Arduino_NANO_01_LED_2025-05-16.png)
+![TinkerCad Circuit](01_LED_Circuit_TinkerCad.png)
