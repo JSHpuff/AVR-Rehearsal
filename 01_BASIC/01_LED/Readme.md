@@ -16,7 +16,7 @@ It demonstrates three key concepts:
 You can copy the code or using the file in 01_LED.
 
 ### Code Explanation
-0. **Purpose**: blink led
+0. **Purpose**: GPIO OUTPUT
 
 ---
 1.  #define Mhz 1000000UL  
